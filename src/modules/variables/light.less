@@ -10,6 +10,7 @@
 
 @scroll_bg-light: mix(@bg-light, @fg-light, 80%);
 @scrollbar_slider_color-light: mix(@fg-light, @bg-light, 60%);
+@success-light: rgb(152,151,26);
 @warning-light: rgb(181,118,20);
 @error-light: rgb(157,0,6);
 
@@ -19,7 +20,7 @@
 
 .theme-light {
   --text-normal: @text_color-light;
-  --text-link: var(--dnome-accent-soft);
+  --text-link: darken(@success-light, 10%);
   --background-primary: @bg-light;
   --background-secondary: @base-light;
   --background-secondary-alt: @sidebar-light;
