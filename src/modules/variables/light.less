@@ -2,15 +2,15 @@
 // so there are no overrides in {less}.
 @base-light: rgb(251,241,199);
 @text_color-light: rgb(60,56,54);
-@bg-light: rgb(251,241,199);
-@fg-light: rgb(60,56,54);
+@bg-light: darken(@base-light, 5%);
+@fg-light: darken(@text_color-light, 5%);
 
-@accent-light: rgb(40,40,40);
-@border-light: rgb(251,241,199);
+@accent-light: rgb(121,116,14);
+@border-light: rgb(152,151,26);
 
 @scroll_bg-light: mix(@bg-light, @fg-light, 80%);
 @scrollbar_slider_color-light: mix(@fg-light, @bg-light, 60%);
-@success-light: rgb(152,151,26);
+@success-light: @accent-light;
 @warning-light: rgb(181,118,20);
 @error-light: rgb(157,0,6);
 
@@ -56,7 +56,7 @@
   --brand-experiment-05a: fade(@accent-light, 5%);
   --profile-body-background-color: var(--dnome-list-item-hover);
   --profile-body-divider-color: @border-light;
-  --brand-experiment: rgb(152,151,26);
+  --brand-experiment: @accent-light;
   --brand-experiment-560: var(--brand-experiment);
   --control-brand-foreground: var(--brand-experiment);
   --profile-message-input-border-color: @border-light;
@@ -71,7 +71,7 @@
   --dnome-accent-lighter: lighten(@accent-light, 10%);
   --dnome-darker-accent: @darker_accent-light;
   --dnome-error: @error-light;
-  --dnome-error-soft: rgba(204, 0, 0, 0.2);
+  --dnome-error-soft: darken(@error-light, 35%);
   --dnome-list-item-hover: darken(@bg-light, 10%);
   --dnome-list-item-hover-selected: darken(@bg-light, 13%);
   --dnome-list-item-selected: #E6E6E6;
