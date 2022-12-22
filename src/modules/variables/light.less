@@ -1,17 +1,17 @@
 // Light mode variables have the `-light` suffix
 // so there are no overrides in {less}.
-@base-light: #FAFAFA;
-@text_color-light: #000000;
-@bg-light: #ffffff;
-@fg-light: #2e3436;
+@base-light: rgb(251,241,199);
+@text_color-light: rgb(60,56,54);
+@bg-light: rgb(251,241,199);
+@fg-light: rgb(60,56,54);
 
-@accent-light: #3584E4;
-@border-light: #DCDCDC;
+@accent-light: rgb(40,40,40);
+@border-light: rgb(251,241,199);
 
 @scroll_bg-light: mix(@bg-light, @fg-light, 80%);
 @scrollbar_slider_color-light: mix(@fg-light, @bg-light, 60%);
-@warning-light: #f57900;
-@error-light: #cc0000;
+@warning-light: rgb(181,118,20);
+@error-light: rgb(157,0,6);
 
 @sidebar-light: @base-light;
 
@@ -55,9 +55,9 @@
   --brand-experiment-05a: fade(@accent-light, 5%);
   --profile-body-background-color: var(--dnome-list-item-hover);
   --profile-body-divider-color: @border-light;
-  --brand-experiment-560: #3584e4;
-  --brand-experiment: #3584e4;
-  --control-brand-foreground: #3584e4;
+  --brand-experiment: rgb(152,151,26);
+  --brand-experiment-560: var(--brand-experiment);
+  --control-brand-foreground: var(--brand-experiment);
   --profile-message-input-border-color: @border-light;
   --deprecated-card-bg: @base-light;
 
@@ -71,11 +71,11 @@
   --dnome-darker-accent: @darker_accent-light;
   --dnome-error: @error-light;
   --dnome-error-soft: rgba(204, 0, 0, 0.2);
-  --dnome-list-item-hover: #ECECEC;
-  --dnome-list-item-hover-selected: #DFDFDF;
+  --dnome-list-item-hover: darken(@bg-light, 10%);
+  --dnome-list-item-hover-selected: darken(@bg-light, 13%);
   --dnome-list-item-selected: #E6E6E6;
-  --dnome-accent-soft: #78aeed;
-  --dnome-searchbox: #D8D8D8;
+  --dnome-accent-soft: fade(@accent-light, 10%);
+  --dnome-searchbox: darken(@bg-light, 10%);
   --dnome-popup-hover: #EBEBEB;
   --dnome-popup-selected: #D8D8D8;
   --dnome-border-big: 12px;
